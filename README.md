@@ -24,7 +24,7 @@
 
 #### 3. web.xml 생성
 
-* Java EE tools > Generate Deployment Descriptor
+* Java EE Tools > Generate Deployment Descriptor
 
 #### 4. web.xml version 변경
 
@@ -34,3 +34,9 @@
 	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
 	version="5.0">
 ```
+
+#### 5. Targeted Runtimes 설정
+
+1) 프로젝트 우클릭 > Properties > Targeted Runtimes
+
+2) 프로젝트의 서버 선택
