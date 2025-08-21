@@ -1,8 +1,8 @@
-### Eclipse Maven War Project 만들기
+## Eclipse Maven War Project 만들기
 
-#### 1. war packaging maven project 생성
+### 1. war packaging maven project 생성
 
-#### 2. pom.xml 수정
+### 2. pom.xml 수정
 
 1) properties -> java version 21
 
@@ -44,11 +44,15 @@
 </build>
 ```
 
-#### 3. web.xml 생성
+4) Update Maven Project
+
+### 3. web.xml 생성
 
 * 프로젝트 우클릭 > Java EE Tools > Generate Deployment Descriptor
 
-#### 4. Targeted Runtimes 설정
+* servlet api version이 적용 안되면 web.xml 삭제후 재시도
+
+### 4. Targeted Runtimes 설정
 
 1) 프로젝트 우클릭 > Properties > Targeted Runtimes
 
