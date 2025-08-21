@@ -18,7 +18,7 @@
 
 ```xml
 <build>
-	<finalName>프로젝트명</finalName>
+	<finalName>파일명</finalName>
 </build>
 ```
 
