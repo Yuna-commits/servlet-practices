@@ -37,6 +37,5 @@
 
 #### 5. Targeted Runtimes 설정
 
-1) 프로젝트 우클릭 > Properties > Targeted Runtimes
-
-2) 프로젝트의 서버 선택
+	1) 프로젝트 우클릭 > Properties > Targeted Runtimes
+	2) 프로젝트의 서버 선택
