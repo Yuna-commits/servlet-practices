@@ -1,7 +1,6 @@
 <%@ page import="com.bit2025.emaillist.vo.EmailVo" %>
 <%@ page import="com.bit2025.emaillist.dao.EmailDao" %>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	// 1. form 입력 데이터 추출
 	String firstName = request.getParameter("firstName");

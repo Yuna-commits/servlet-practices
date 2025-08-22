@@ -1,8 +1,7 @@
 <%@ page import="com.bit2025.emaillist.dao.EmailDao"%>
 <%@ page import="com.bit2025.emaillist.vo.EmailVo"%>
 <%@ page import="java.util.List"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	List<EmailVo> list = new EmailDao().findAll();
 %>
@@ -30,6 +29,11 @@
 		<tr>
 			<td>이메일</td>
 			<td><%=vo.getEmail() %></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<a href="/emaillist01/delete.jsp?id=<%=vo.getId() %>">삭제</a>
+			</td>
 		</tr>
 	</table>
 	<br>
