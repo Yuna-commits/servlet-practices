@@ -2,7 +2,6 @@
 <%
 	// 1. 쿼리 스트링으로 들어온 id 추출
 	String sId = request.getParameter("id");
-	Long id = Long.parseLong(sId);
 %>
 <!DOCTYPE html>
 <html>
@@ -12,7 +11,7 @@
 </head>
 <body>
 	<form method="post" action="/guestbook01/delete.jsp">
-	<input type='hidden' name="id" value="<%= id%>">
+	<input type='hidden' name="id" value="<%= sId%>">
 	<table>
 		<tr>
 			<td>비밀번호</td>
