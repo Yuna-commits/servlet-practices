@@ -15,12 +15,11 @@ public class GuestbookDao {
 	public void insert(GuestbookVo vo) {
 		try (
 			Connection conn = getConnection();
-			PreparedStatement pstmt = conn.prepareStatement("insert into guestbook values(null, ?, ?, ?, ?)");
+			PreparedStatement pstmt = conn.prepareStatement("insert into guestbook values(null, ?, ?, ?, now())");
 		) {
 			pstmt.setString(1, vo.getName());
 			pstmt.setString(2, vo.getPassword());
 			pstmt.setString(3, vo.getMessage());
-			pstmt.setString(4, vo.getRegDate());
 
 			pstmt.executeUpdate();
 		} catch (SQLException e) {
