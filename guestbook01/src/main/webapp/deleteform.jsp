@@ -2,6 +2,8 @@
 <%
 	// 1. 쿼리 스트링으로 들어온 id 추출
 	String sId = request.getParameter("id");
+
+	// 2. <input>password와 함께 delete.jsp로 보냄
 %>
 <!DOCTYPE html>
 <html>
