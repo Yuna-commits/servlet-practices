@@ -15,7 +15,7 @@ public class GuestbookDao {
 	public void insert(GuestbookVo vo) {
 		try (
 			Connection conn = getConnection();
-			PreparedStatement pstmt = conn.prepareStatement("insert into guestbook values(null, ?, ?, ?, now())");
+			PreparedStatement pstmt = conn.prepareStatement("insert into guestbook values(null, ?, password(?), ?, now())");
 		) {
 			pstmt.setString(1, vo.getName());
 			pstmt.setString(2, vo.getPassword());
@@ -62,7 +62,7 @@ public class GuestbookDao {
 	public void deleteByIdAndPassword(Long id, String password) {
 		try (
 			Connection conn = getConnection();
-			PreparedStatement pstmt = conn.prepareStatement("delete from guestbook where id=? and password=?");
+			PreparedStatement pstmt = conn.prepareStatement("delete from guestbook where id=? and password=password(?)");
 		) {
 			pstmt.setLong(1, id);
 			pstmt.setString(2, password);
