@@ -7,11 +7,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
-		<module>helloweb</module>
 		<module>emaillist01</module>
-		<module>guestBook01</module>
-		<module>guestbook01</module>
 		<module>emaillist02</module>
-		<module>jstlel</module>
+		<module>guestbook01</module>
 	</modules>
 </project>
